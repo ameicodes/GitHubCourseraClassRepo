@@ -1,4 +1,4 @@
-/* Base styles */
+/* Reset and base styles */
 * {
   box-sizing: border-box;
 }
@@ -9,24 +9,41 @@ body {
   padding: 20px;
 }
 
-h1 {
+.main-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .row {
   width: 100%;
+  overflow: hidden;
 }
 
 .col {
-  background-color: #e2e2e2;
-  border: 1px solid #999;
-  padding: 20px;
   float: left;
-  width: 100%; /* mobile default */
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 20px;
+  position: relative;
 }
 
-/* Tablet: 768px to 991px */
+/* Section title always top right */
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ddd;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+/* Mobile: default */
+.col {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Tablet view */
 @media (min-width: 768px) and (max-width: 991px) {
   .col {
     width: 50%;
@@ -38,7 +55,7 @@ h1 {
   }
 }
 
-/* Desktop: 992px and up */
+/* Desktop view */
 @media (min-width: 992px) {
   .col {
     width: 33.33%;
