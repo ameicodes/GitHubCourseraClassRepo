@@ -24,7 +24,7 @@ h1 {
   border: 1px solid black;
   padding: 50px 15px 15px 15px;
   position: relative;
-  margin: 0;
+  margin: 20px;
 }
 
 /* Section title always top right */
