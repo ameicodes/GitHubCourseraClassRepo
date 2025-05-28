@@ -18,17 +18,13 @@ h1 {
 
 .row {
   width: 100%;
-  overflow: hidden;
 }
 
 .section {
-  float: left;
-  background-color: #f4f4f4;
   border: 1px solid black;
   padding: 50px 15px 15px 15px;
   position: relative;
   margin: 0;
-  color: white;
 }
 
 /* Section title always top right */
@@ -38,20 +34,21 @@ h1 {
   right: 0;
   padding: 5px 10px;
   font-weight: bold;
+  border: 1px solid black;
 }
 
 /* Chicken section */
 #chicken{
-  background-color: lightred;
+  background-color: #A52A2A;
 }
 
 /* Beef section */
 #beef{
-  background-color: lightgreen;
+  background-color: #15CE3B;
 
 /* sushi section */
   #sushi{
-    background-color: lightblue;
+    background-color: #0BAEFD;
   }
   
 /* Mobile: default */
