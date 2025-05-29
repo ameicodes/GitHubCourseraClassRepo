@@ -55,7 +55,6 @@ h1{
   .section{
     float:left;
     width:33.33%;
-    margin:10px;
   }
 }
 
@@ -66,12 +65,11 @@ h1{
     float:left;
   }
   .section:nth-child(1), .section:nth-child(2){
-    width:45%;
+    width:50%;
     margin-bottom: 20px;
-    margin-right:10px;
   }
   .section:nth-child(3){
-    width:91.2%;
+    width:100%;
     clear:both;
   }
 }
