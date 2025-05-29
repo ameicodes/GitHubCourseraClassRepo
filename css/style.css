@@ -24,17 +24,31 @@ h1{
   border: 1px solid black;
   padding:20px;
   position: relative;
+  height: 100px;
+  background-color:lightgray;
 
 }
 
-.section-title{
+.chicken, .beef, .sushi{
   position: absolute;
   top:0;
   right:0;
   border:1px solid black;
   padding: 4px 4px;
   font-weight: bold;
+  
 }
+.chicken{
+  background-color:lightgreen;
+}
+.beef{
+  background-color:lightblue;
+}
+.sushi{
+  background-color:lightpink;
+}
+
+
 
 /*Desktop View*/
 @media(min-width:992px){
@@ -55,6 +69,7 @@ h1{
   }
   .section:nth-child(3){
     width:100%;
+    margin-bottom:20px;
     clear:both;
   }
 }
