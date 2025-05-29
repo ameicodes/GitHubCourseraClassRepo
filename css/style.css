@@ -7,6 +7,8 @@
 .section{
   float: left;
   width: 33.33%;
+  border-style: solid;
+  border-color:black;
 }
     
 .row::after{
