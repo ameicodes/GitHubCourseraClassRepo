@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* ===== Base Reset and Typography ===== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,33 +6,37 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
   padding: 20px;
 }
 
 .page-title {
-  font-size: 1.75em; /* 75% larger */
   text-align: center;
+  font-size: 1.75em;
   margin-bottom: 30px;
 }
 
-/* Layout container */
+/* ===== Row and Column Layout ===== */
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Section styles */
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+/* ===== Section Box Styling ===== */
 .section {
   position: relative;
   border: 1px solid black;
   background-color: #f0f0f0;
-  padding: 40px 15px 15px 15px; /* extra top space for the title box */
-  margin: 10px;
+  padding: 40px 15px 15px 15px;
+  margin-bottom: 20px;
 }
 
-/* Section title */
 .section-title {
   position: absolute;
   top: 0;
@@ -40,36 +44,27 @@ body {
   background-color: #ddd;
   border: 1px solid black;
   padding: 5px 10px;
-  font-size: 1.25em; /* 25% larger */
+  font-size: 1.25em;
 }
 
-/* Default: Mobile (<=767px) - stacked */
-.section {
+/* ===== Mobile First (Default) ===== */
+.col-sm-12 {
   width: 100%;
 }
 
-/* Tablet view (768px–991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .chicken,
-  .beef {
-    width: 48%;
-    float: left;
-    margin: 1%;
+/* ===== Tablet (768px to 991px) ===== */
+@media (min-width: 768px) {
+  .col-md-6 {
+    width: 50%;
   }
-
-  .sushi {
-    width: 98%;
-    float: left;
-    margin: 1%;
-    clear: both;
+  .col-md-12 {
+    width: 100%;
   }
 }
 
-/* Desktop view (>=992px) */
+/* ===== Desktop (992px and up) ===== */
 @media (min-width: 992px) {
-  .section {
-    width: 31.33%;
-    float: left;
-    margin: 1%;
+  .col-lg-4 {
+    width: 33.33%;
   }
 }
