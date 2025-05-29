@@ -1,4 +1,4 @@
-/* ===== Base Reset ===== */
+/* === Reset & Base Styles === */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,23 +12,22 @@ body {
 
 .page-title {
   text-align: center;
-  font-size: 1.75em; /* 75% larger */
+  font-size: 1.75em;
   margin-bottom: 30px;
 }
 
-/* ===== Layout Container ===== */
+/* === Layout === */
 .row {
   width: 100%;
-  overflow: hidden; /* Contains floated children */
+  overflow: hidden; /* contains floats */
 }
 
-/* ===== Section Styling ===== */
 .section {
   float: left;
-  width: 100%; /* Mobile default */
+  width: 100%;
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #f8f8f8;
+  background-color: #f0f0f0;
   border: 1px solid black;
   position: relative;
 }
@@ -37,17 +36,17 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: #ddd;
-  padding: 5px 10px;
+  background-color: #ccc;
   border: 1px solid black;
-  font-size: 1.25em; /* 25% larger */
+  padding: 5px 10px;
+  font-size: 1.25em;
 }
 
-/* ===== Tablet (768px–991px) ===== */
+/* === Tablet View (768px–991px) === */
 @media (min-width: 768px) and (max-width: 991px) {
   .section {
     width: 48%;
-    margin-right: 2%;
+    margin-right: 4%;
   }
 
   .section:nth-child(2) {
@@ -56,11 +55,12 @@ body {
 
   .section:nth-child(3) {
     width: 100%;
+    clear: both;
     margin-top: 20px;
   }
 }
 
-/* ===== Desktop (992px and above) ===== */
+/* === Desktop View (≥992px) === */
 @media (min-width: 992px) {
   .section {
     width: 31.33%;
