@@ -1,8 +1,6 @@
 /* === Reset & Base Styles === */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -17,55 +15,9 @@ body {
 }
 
 /* === Layout === */
-.row{
-  width: 33%;
-  overflow: hidden; /* contains floats */
-}
 
-.section {
-  float: left;
-  width: 100%;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-  border: 1px solid black;
-  position: relative;
-}
-
-.section-title {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #ccc;
-  border: 1px solid black;
-  padding: 5px 10px;
-  font-size: 1.25em;
-}
-
-/* === Tablet View (768px–991px) === */
-@media (min-width: 768px) and (max-width: 991px) {
-  .section {
-    width: 48%;
-  }
-
-  .section:nth-child(2) {
-    margin-right: 0;
-  }
-
-  .section:nth-child(3) {
-    width: 100%;
-    clear: both;
-    margin-top: 20px;
-  }
-}
-
-/* === Desktop View (≥992px) === */
-@media (min-width: 992px) {
-  .section {
-    width: 31.33%;
-  }
-
-  .section:last-child {
-    margin-right: 0;
-  }
+.column{
+  float:left;
+  width: 33.33%
+  padding: 5px;
 }
