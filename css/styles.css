@@ -1,8 +1,8 @@
 /* Reset and base styles */
 * {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -17,16 +17,19 @@ h1 {
 }
 
 .row {
-  content="";
+  content: "";
   display: table;
   clear: both;
 }
 
+/* General section styles */
 .section {
+  width: 100%;
   border: 1px solid black;
   padding: 40px 15px 15px 15px;
   position: relative;
   margin: 20px;
+  clear: both;
 }
 
 /* Section title always top right */
@@ -38,28 +41,18 @@ h1 {
   font-weight: bold;
   border: 1px solid black;
 }
-.section{
-  width: 100%;
-}
 
-/* Chicken section */
-#chicken{
+/* Individual section colors */
+#chicken {
   background-color: #A52A2A;
 }
 
-/* Beef section */
-#beef{
+#beef {
   background-color: #15CE3B;
+}
 
-/* sushi section */
-  #sushi{
-    background-color: #793AA3;
-  }
-  
-/* Mobile: default */
-.section {
-  width: 100%;
-  clear: both;
+#sushi {
+  background-color: #793AA3;
 }
 
 /* Tablet view */
@@ -71,8 +64,8 @@ h1 {
 
   .section:nth-child(3) {
     width: 100%;
-    clear: both;
     float: left;
+    clear: both;
   }
 }
 
