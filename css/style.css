@@ -55,6 +55,7 @@ h1{
   .section{
     float:left;
     width:33.33%;
+    margin-right:5px;
   }
 }
 
