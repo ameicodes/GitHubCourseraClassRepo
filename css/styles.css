@@ -3,21 +3,4 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
 
-.page-title {
-  text-align: center;
-  font-size: 1.75em;
-  margin-bottom: 30px;
-}
-
-/* === Layout === */
-
-.column{
-  float:left;
-  width: 33.33%
-  padding: 5px;
-}
