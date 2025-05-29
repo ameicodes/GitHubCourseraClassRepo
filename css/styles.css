@@ -1,9 +1,17 @@
 /* === Reset & Base Styles === */
 
-.row{
-  float:left;
+* {
+  box-sizing: border-box;
 }
 
 .section{
-  width: 50px;
+  float: left;
+  width: 33.33%;
+  padding: 15px;
 }
+    
+.row::after{
+  content:"";
+  clear:both;
+}
+
