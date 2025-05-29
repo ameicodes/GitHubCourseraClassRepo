@@ -17,7 +17,9 @@ h1 {
 }
 
 .row {
-  width: 100%;
+  content="";
+  display: table;
+  clear: both;
 }
 
 .section {
@@ -35,6 +37,9 @@ h1 {
   padding: 5px 10px;
   font-weight: bold;
   border: 1px solid black;
+}
+.section{
+  width: 100%;
 }
 
 /* Chicken section */
@@ -67,6 +72,7 @@ h1 {
   .section:nth-child(3) {
     width: 100%;
     clear: both;
+    float: left;
   }
 }
 
