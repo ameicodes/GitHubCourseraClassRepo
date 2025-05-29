@@ -54,7 +54,7 @@ h1 {
 /* Tablet view */
 @media (min-width: 768px) and (max-width: 991px) {
   .chicken, .beef {
-    width: 50%;
+    width: 100%;
     float: left;
   }
 
