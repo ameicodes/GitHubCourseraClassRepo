@@ -17,7 +17,7 @@ body {
 }
 
 /* === Layout === */
-.col {
+.row{
   width: 100%;
   overflow: hidden; /* contains floats */
 }
