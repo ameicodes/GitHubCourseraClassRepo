@@ -1,4 +1,4 @@
-/* ===== Base Reset and Typography ===== */
+/* ===== Base Reset ===== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,35 +6,31 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   padding: 20px;
 }
 
 .page-title {
   text-align: center;
-  font-size: 1.75em;
+  font-size: 1.75em; /* 75% larger */
   margin-bottom: 30px;
 }
 
-/* ===== Row and Column Layout ===== */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+/* ===== Layout Container ===== */
+.row {
+  width: 100%;
+  overflow: hidden; /* Contains floated children */
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-
-/* ===== Section Box Styling ===== */
+/* ===== Section Styling ===== */
 .section {
-  position: relative;
-  border: 1px solid black;
-  background-color: #f0f0f0;
-  padding: 40px 15px 15px 15px;
+  float: left;
+  width: 100%; /* Mobile default */
+  padding: 20px;
   margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid black;
+  position: relative;
 }
 
 .section-title {
@@ -42,29 +38,36 @@ body {
   top: 0;
   right: 0;
   background-color: #ddd;
-  border: 1px solid black;
   padding: 5px 10px;
-  font-size: 1.25em;
+  border: 1px solid black;
+  font-size: 1.25em; /* 25% larger */
 }
 
-/* ===== Mobile First (Default) ===== */
-.col-sm-12 {
-  width: 100%;
-}
-
-/* ===== Tablet (768px to 991px) ===== */
-@media (min-width: 768px) {
-  .col-md-6 {
-    width: 50%;
+/* ===== Tablet (768px–991px) ===== */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 48%;
+    margin-right: 2%;
   }
-  .col-md-12 {
+
+  .section:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .section:nth-child(3) {
     width: 100%;
+    margin-top: 20px;
   }
 }
 
-/* ===== Desktop (992px and up) ===== */
+/* ===== Desktop (992px and above) ===== */
 @media (min-width: 992px) {
-  .col-lg-4 {
-    width: 33.33%;
+  .section {
+    width: 31.33%;
+    margin-right: 3%;
+  }
+
+  .section:last-child {
+    margin-right: 0;
   }
 }
