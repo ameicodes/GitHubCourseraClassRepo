@@ -1,9 +1,9 @@
 /* === Reset & Base Styles === */
 
 .row{
-  float:left
+  float:left;
 }
 
 .section{
-  width: 50px
+  width: 50px;
 }
