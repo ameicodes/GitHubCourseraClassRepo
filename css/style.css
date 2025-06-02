@@ -1,27 +1,33 @@
-body{
-  font-size: 16px;
-  font-family: Arial,sans-serif;
-}
-
-/*Header*/
-#header-nav{
-  background-color: FFF;
+/* Navbar styling */
+#header-nav {
+  background-color: #E9C8FA;
   border-radius: 0;
   border: 0;
 }
 
-.navbar-brand h1{ /*Resturant name*/
-  color: ##501DAF;
+/* Brand styling */
+.navbar-brand h1 {
+  color: #970DDB;
   font-size: 1.5em;
-  text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: .75;
-  
+  margin: 0;
 }
 
-.navbar-brand{
-  text-decoration:none;
+/* Mobile dropdown menu (full width) */
+#mobile-dropdown {
+  padding: 0;
+  background-color: #D9A5F5;
+}
+#mobile-dropdown ul {
+  width: 100%;
+  margin: 0;
+}
+#mobile-dropdown li {
+  text-align: center;
+  border-bottom: 1px solid #61122f;
+}
+#mobile-dropdown a {
+  color: #61122f;
+  display: block;
+  padding: 10px 0;
 }
